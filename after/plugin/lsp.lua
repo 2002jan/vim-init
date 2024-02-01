@@ -48,3 +48,18 @@ cmp.setup({
     ['<C-Space>'] = cmp.mapping.complete(),
   }),
 })
+
+lsp_zero.configure('intelephense', {
+    settings = {
+        intelephense = {
+            telemetry = {
+                enabled = false
+            },
+            environment = {
+                includePaths = {
+                    "[...redacted...]/phpunit/vendor/**"
+                }
+            }
+        }
+    }
+})
