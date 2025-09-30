@@ -1,3 +1,5 @@
+local sep = package.config:sub(1,1)
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -12,7 +14,7 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = vim.env.HOME .. "\\.vim\\undodir"
+vim.opt.undodir = vim.env.HOME .. sep .. ".vim" .. sep .. "undodir"
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
